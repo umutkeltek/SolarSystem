@@ -13,6 +13,8 @@ public class SolarSystemManager : MonoBehaviour
     {
         celestials = GameObject.FindGameObjectsWithTag("Celestial");
         InitialVelocity();
+        
+
     }
 
     
