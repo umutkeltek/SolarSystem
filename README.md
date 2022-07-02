@@ -13,4 +13,4 @@ Any tips or questions will be appreciated.
 - Planets are rotating around their own axis.
 - Planets are rotating around the sun.
 - Everything is simulated by Newton's law of universal gravitation
-- TourCounter object has serializable fields which is showing the count of completed tour by spesific planet.
+- TourCounter object has serializable fields which is showing the count of completed tour by specific planet.
