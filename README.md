@@ -9,3 +9,8 @@ There is a child game object called "Mesh" under the planets. Rotation around th
 Basically, the sun is pulling planets towards itself with force. To oppose the pulling force, every planet has its own initial velocity to create a centrifugal force against that force, so planets could rotate around the sun without getting pulled. 
 
 Any tips or questions will be appreciated.
+
+- Planets are rotating around their own axis.
+- Planets are rotating around the sun.
+- Everything is simulated by Newton's law of universal gravitation
+- TourCounter object has serializable fields which is showing the count of completed tour by spesific planet.
