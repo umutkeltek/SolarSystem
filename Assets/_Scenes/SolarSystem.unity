@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.045186855, g: 0.039375335, b: 0.047922723, a: 1}
+  m_IndirectSpecularColor: {r: 0.044339806, g: 0.039306067, b: 0.047032475, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1120,6 +1120,7 @@ GameObject:
   - component: {fileID: 986116197}
   - component: {fileID: 986116196}
   - component: {fileID: 986116201}
+  - component: {fileID: 986116198}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Celestial
@@ -1156,6 +1157,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &986116198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986116195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba25ed92132d3964896f8ffda770b783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateRate: 20
 --- !u!4 &986116200
 Transform:
   m_ObjectHideFlags: 0
@@ -1525,6 +1539,7 @@ GameObject:
   - component: {fileID: 1130525984}
   - component: {fileID: 1130525983}
   - component: {fileID: 1130525988}
+  - component: {fileID: 1130525985}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Celestial
@@ -1561,6 +1576,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1130525985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130525982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba25ed92132d3964896f8ffda770b783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateRate: 20
 --- !u!4 &1130525987
 Transform:
   m_ObjectHideFlags: 0
@@ -1824,6 +1852,7 @@ GameObject:
   - component: {fileID: 1716071142}
   - component: {fileID: 1716071141}
   - component: {fileID: 1716071140}
+  - component: {fileID: 1716071143}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Celestial
@@ -1958,6 +1987,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1716071143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716071139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba25ed92132d3964896f8ffda770b783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateRate: 20
 --- !u!4 &1716071145
 Transform:
   m_ObjectHideFlags: 0
@@ -1985,6 +2027,7 @@ GameObject:
   - component: {fileID: 1829179057}
   - component: {fileID: 1829179056}
   - component: {fileID: 1829179061}
+  - component: {fileID: 1829179058}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Celestial
@@ -2021,6 +2064,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1829179058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829179055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba25ed92132d3964896f8ffda770b783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateRate: 20
 --- !u!4 &1829179060
 Transform:
   m_ObjectHideFlags: 0
