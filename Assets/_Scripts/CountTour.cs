@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class CountTour : MonoBehaviour
 {
     [SerializeField] private int Mercury = -1;
@@ -13,10 +13,12 @@ public class CountTour : MonoBehaviour
     [SerializeField] private int Saturn = -1;
     [SerializeField] private int Uranus = -1;
     [SerializeField] private int Neptune = -1;
-
+    [SerializeField] public TextMeshProUGUI text;
     private void OnTriggerEnter(Collider other)
     {
         increaseTour(other.transform.name);
+        text.text = "Mercury: " + Mercury + "\n" + "Venus: " + Venus + "\n" + "Earth: " + Earth + "\n" + "Mars: " +
+                    Mars + "\n"; //+ "Jupiter: " + Jupiter + "\n" + "Saturn: " + Saturn + "\n" + "Uranus: " + Uranus + "\n" + "Neptune: " + Neptune
     }
 
     // private void OnCollisionEnter(Collision collision)

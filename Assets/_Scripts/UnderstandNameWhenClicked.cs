@@ -22,7 +22,7 @@ public class UnderstandNameWhenClicked : MonoBehaviour
                   {
                       if (raycastHit.transform != null)
                       {
-                         //Our custom method. 
+                         
                           CurrentClickedGameObject(raycastHit.transform.gameObject);
                       }
                   }
