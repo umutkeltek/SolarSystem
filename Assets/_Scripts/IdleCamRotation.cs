@@ -11,7 +11,7 @@ public class IdleCamRotation : MonoBehaviour
     private bool playerIdling = true; 
     void Start()
     {
-        lastTimeNotIdle = Time.realtimeSinceStartup; // initialize at "now"
+        lastTimeNotIdle = Time.realtimeSinceStartup; // initialize lastTimeNotIdle to current time
     }
     
  
@@ -20,15 +20,14 @@ public class IdleCamRotation : MonoBehaviour
         
         if (!isIdle())
         {
-            // When we are not idling, update the time of last non-idle action
-            lastTimeNotIdle = Time.realtimeSinceStartup;
+            
+            lastTimeNotIdle = Time.realtimeSinceStartup; // update lastTimeNotIdle to current time while player is not idling
         }
+
+        float diff = Time.realtimeSinceStartup - lastTimeNotIdle;// Calculate how long we are idling
  
-        // Calculate how long we are idling
-        float diff = Time.realtimeSinceStartup - lastTimeNotIdle;
- 
-        // Only rotate when we waited timeBeforeRotate seconds after the last user action
-        if (diff > timeBeforeRotate)
+        
+        if (diff > timeBeforeRotate) //rotate the camera if player is idling for more than timeBeforeRotate seconds
         {
             transform.RotateAround(rotateAround.position, Vector3.up, speed);
         }
@@ -36,11 +35,11 @@ public class IdleCamRotation : MonoBehaviour
  
     private bool isIdle() // returns true if we are idling
     {   
-        if(Input.anyKey)
+        if(Input.anyKey) // if any key is pressed, we are not idling
         {
             return playerIdling = false;
         }
-        else
+        else //otherwise we are idling
         {
             return playerIdling = true;
         }

@@ -7,7 +7,7 @@ public class RotateAroundOwnAxis : MonoBehaviour
     [SerializeField] private float rotateRate = 20;
     void Update()
     {
-        transform.Rotate (Vector3.up * rotateRate * Time.deltaTime, Space.Self);
+        transform.Rotate (Vector3.up * rotateRate * Time.deltaTime, Space.Self); //rotate planet around its own axis
 
     }
 }

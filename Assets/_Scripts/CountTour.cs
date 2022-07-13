@@ -13,11 +13,11 @@ public class CountTour : MonoBehaviour
     [SerializeField] private int Saturn = -1;
     [SerializeField] private int Uranus = -1;
     [SerializeField] private int Neptune = -1;
-    [SerializeField] public TextMeshProUGUI text;
+    [SerializeField] public TextMeshProUGUI text; //for adressing the text in the UI
     private void OnTriggerEnter(Collider other)
     {
         increaseTour(other.transform.name);
-        text.text = "Mercury: " + Mercury + "\n" + "Venus: " + Venus + "\n" + "Earth: " + Earth + "\n" + "Mars: " +
+        text.text = "Mercury: " + Mercury + "\n" + "Venus: " + Venus + "\n" + "Earth: " + Earth + "\n" + "Mars: " + //shows the number of tours for each planet
                     Mars + "\n"; //+ "Jupiter: " + Jupiter + "\n" + "Saturn: " + Saturn + "\n" + "Uranus: " + Uranus + "\n" + "Neptune: " + Neptune
     }
 
@@ -26,7 +26,7 @@ public class CountTour : MonoBehaviour
     //     increaseTour(collision.transform.name);
     // }
 
-    private void increaseTour(string celestialName)
+    private void increaseTour(string celestialName) //counting the tour count for each planet
     {
         switch (celestialName)
         {
