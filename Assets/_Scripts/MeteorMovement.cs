@@ -7,25 +7,37 @@ public class MeteorMovement : MonoBehaviour
 {
     private GameObject[] celestials;
     Transform[] celestialTransforms;
-    private Transform _targetCelestial;
+    private Transform _targetCelestial=null;
     [SerializeField] private float minSpeed = 10f;
     [SerializeField] private float maxSpeed = 20f;
+    bool isLockToCelestial;
     void Start()
     {
         celestials = GameObject.FindGameObjectsWithTag("Celestial");
-    }
-
-     void Update()
-    {   
         celestialTransforms = new Transform[celestials.Length];
         for (int i = 0; i < celestials.Length; i++)
         {
             celestialTransforms[i] = celestials[i].transform;
         }
+    }
+
+     void Update()
+    {   
         
-        DecideWhichCelestialToFollow();
-        float speed = Random.Range(minSpeed, maxSpeed);
-        gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, _targetCelestial.position, Time.deltaTime * speed);
+
+       
+        if (isLockToCelestial == false)
+        {
+            DecideWhichCelestialToFollow();
+            isLockToCelestial = true;
+        }
+
+        if (isLockToCelestial == true)
+        {   
+            float speed = Random.Range(minSpeed, maxSpeed);
+            gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, _targetCelestial.position, Time.deltaTime * speed);
+        }
+        
     }
 
      void DecideWhichCelestialToFollow()
@@ -37,8 +49,6 @@ public class MeteorMovement : MonoBehaviour
          float minDistance = distanceToCelestialList.Min();
          int indexMinDistance = distanceToCelestialList.IndexOf(minDistance);
          _targetCelestial = celestials[indexMinDistance].transform;
-         
-         
 
      }
     void OnTriggerEnter(Collider other)

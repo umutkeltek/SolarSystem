@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba25ed92132d3964896f8ffda770b783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateRate: 20
+  rotateRate: 180
 --- !u!1 &139870165
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,7 +852,7 @@ Transform:
   m_Children:
   - {fileID: 139870166}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -947,6 +947,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &865725648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 865725651}
+  - component: {fileID: 865725650}
+  - component: {fileID: 865725649}
+  m_Layer: 0
+  m_Name: InstantiateMeteorSpace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &865725649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865725648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a4dbe745d1e5e4d8b3a20e690fcba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteor: {fileID: 9115038134921792836, guid: fefb70f683f96ea49994dd32064b1086, type: 3}
+  minTimeBetweenMeteors: 1
+  maxTimeBetweenMeteors: 5
+  minMeteorSize: 0.1209
+  maxMeteorSize: 0.771
+--- !u!135 &865725650
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865725648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 47.506416
+  m_Center: {x: -0.75685275, y: 0, z: 0}
+--- !u!4 &865725651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865725648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 696, y: 696, z: 696}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &879339741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,7 +1168,7 @@ Transform:
   m_Children:
   - {fileID: 600091192}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &986116195
 GameObject:
@@ -1120,7 +1182,6 @@ GameObject:
   - component: {fileID: 986116197}
   - component: {fileID: 986116196}
   - component: {fileID: 986116201}
-  - component: {fileID: 986116198}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Celestial
@@ -1152,24 +1213,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986116195}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.57
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &986116198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986116195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba25ed92132d3964896f8ffda770b783, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateRate: 20
 --- !u!4 &986116200
 Transform:
   m_ObjectHideFlags: 0
@@ -1183,7 +1231,7 @@ Transform:
   m_Children:
   - {fileID: 2066661586}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &986116201
 TrailRenderer:
@@ -1359,12 +1407,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018397400}
-  m_LocalRotation: {x: -0.12484746, y: 0.8011979, z: -0.1795838, w: -0.55699617}
-  m_LocalPosition: {x: 2667.495, y: 915.631, z: 1134.3596}
+  m_LocalRotation: {x: -0.057845216, y: -0.9356184, z: 0.2966125, w: -0.18246435}
+  m_LocalPosition: {x: -237.12105, y: 870.1188, z: 1113.8848}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1081213389
 GameObject:
@@ -1427,7 +1475,7 @@ Transform:
   m_Children:
   - {fileID: 390193887}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1081213395
 TrailRenderer:
@@ -1539,7 +1587,6 @@ GameObject:
   - component: {fileID: 1130525984}
   - component: {fileID: 1130525983}
   - component: {fileID: 1130525988}
-  - component: {fileID: 1130525985}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Celestial
@@ -1571,24 +1618,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130525982}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1130525985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130525982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba25ed92132d3964896f8ffda770b783, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateRate: 20
 --- !u!4 &1130525987
 Transform:
   m_ObjectHideFlags: 0
@@ -1602,7 +1636,7 @@ Transform:
   m_Children:
   - {fileID: 38304403}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1130525988
 TrailRenderer:
@@ -1852,7 +1886,6 @@ GameObject:
   - component: {fileID: 1716071142}
   - component: {fileID: 1716071141}
   - component: {fileID: 1716071140}
-  - component: {fileID: 1716071143}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Celestial
@@ -1982,24 +2015,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716071139}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.62
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1716071143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716071139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba25ed92132d3964896f8ffda770b783, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateRate: 20
 --- !u!4 &1716071145
 Transform:
   m_ObjectHideFlags: 0
@@ -2013,7 +2033,7 @@ Transform:
   m_Children:
   - {fileID: 418788469}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1829179055
 GameObject:
@@ -2027,7 +2047,6 @@ GameObject:
   - component: {fileID: 1829179057}
   - component: {fileID: 1829179056}
   - component: {fileID: 1829179061}
-  - component: {fileID: 1829179058}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Celestial
@@ -2059,24 +2078,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829179055}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.59
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1829179058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829179055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba25ed92132d3964896f8ffda770b783, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateRate: 20
 --- !u!4 &1829179060
 Transform:
   m_ObjectHideFlags: 0
@@ -2090,7 +2096,7 @@ Transform:
   m_Children:
   - {fileID: 1397872751}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1829179061
 TrailRenderer:
@@ -2234,7 +2240,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954964259}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -2300,7 +2306,7 @@ Transform:
   m_LocalScale: {x: 696, y: 696, z: 696}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2006955231
 GameObject:
@@ -2461,7 +2467,7 @@ Transform:
   m_Children:
   - {fileID: 343940765}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2066661585
 GameObject:
@@ -2673,7 +2679,7 @@ Transform:
   m_LocalScale: {x: 45000, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2075669264
 Rigidbody:
