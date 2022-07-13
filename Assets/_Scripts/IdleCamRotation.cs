@@ -8,7 +8,7 @@ public class IdleCamRotation : MonoBehaviour
     [SerializeField] private float timeBeforeRotate = 3f;
     [SerializeField] private Transform rotateAround;
     private float lastTimeNotIdle;
-    [SerializeField] private bool playerIdling = true; 
+    private bool playerIdling = true; 
     void Start()
     {
         lastTimeNotIdle = Time.realtimeSinceStartup; // initialize at "now"

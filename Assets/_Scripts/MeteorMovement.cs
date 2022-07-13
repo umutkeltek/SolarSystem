@@ -19,13 +19,12 @@ public class MeteorMovement : MonoBehaviour
         {
             celestialTransforms[i] = celestials[i].transform;
         }
+        
     }
 
      void Update()
     {   
         
-
-       
         if (isLockToCelestial == false)
         {
             DecideWhichCelestialToFollow();
@@ -49,6 +48,8 @@ public class MeteorMovement : MonoBehaviour
          float minDistance = distanceToCelestialList.Min();
          int indexMinDistance = distanceToCelestialList.IndexOf(minDistance);
          _targetCelestial = celestials[indexMinDistance].transform;
+         Destroy(this.gameObject, 60f);
+
 
      }
     void OnTriggerEnter(Collider other)
