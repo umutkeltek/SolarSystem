@@ -7,6 +7,8 @@ using UnityEngine;
 public class UnderstandNameWhenClicked : MonoBehaviour
 {      
     [SerializeField] public TextMeshProUGUI text;
+    [SerializeField] private GameObject Panel;
+    private bool active;
       void Update()
        {
               //Check for mouse click 
@@ -30,9 +32,19 @@ public class UnderstandNameWhenClicked : MonoBehaviour
       public void CurrentClickedGameObject(GameObject gameObject)
       {
           if(gameObject.tag=="Celestial")
-          {   text.text=gameObject.name;
+          {
+              if (Panel != null)
+              {
+                  Panel.SetActive(true);
+              }
+              text.text=gameObject.name;
               Debug.Log("You clicked on " + gameObject.name);
           }
           
+      }
+
+      public void ClosePanel()
+      {
+          Panel.SetActive(false);
       }
 }

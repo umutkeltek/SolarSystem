@@ -20,7 +20,7 @@ public class InstantiateMeteor : MonoBehaviour
     
     private void Start()
     {
-        InvokeRepeating("Spawn", 1f, Random.Range(1f, 5f));
+        InvokeRepeating("Spawn", 1f, Random.Range(minTimeBetweenMeteors, maxTimeBetweenMeteors));
     }
 
     void Spawn()
