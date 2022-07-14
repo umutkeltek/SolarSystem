@@ -14,3 +14,7 @@ Any tips or questions will be appreciated.
 - Planets are rotating around the sun.
 - Everything is simulated by Newton's law of universal gravitation
 - TourCounter object has serializable fields which is showing the count of completed tour by specific planet.
+
+![image](https://user-images.githubusercontent.com/35880258/178855784-21d82505-5913-4f9b-bd95-46152a75b122.png)
+
+![Meteor](https://user-images.githubusercontent.com/35880258/178857699-e0c21a25-b989-432c-85dc-42e7adceaafd.png)
