@@ -37,7 +37,9 @@ public class UnderstandNameWhenClicked : MonoBehaviour
               {
                   Panel.SetActive(true);
               }
-              text.text=gameObject.name;
+              ;
+              text.text = gameObject.GetComponent<HoldScriptableObject>().scriptableObject.ToString();
+              //gameObject.GetComponent<PlanetDataSO>().CelestialName +"\n"+ gameObject.GetComponent<PlanetDataSO>().CelestialRadius;
               //Debug.Log("You clicked on " + gameObject.name);
           }
           
