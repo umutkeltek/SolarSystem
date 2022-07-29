@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351b368086be62c4aa9126b3c2e3133c, type: 3}
   m_Name: Uranus
   m_EditorClassIdentifier: 
-  CelestialName: 
+  CelestialName: Uranus
   CelestialDescription: 
-  CelestialRadius: 0
+  CelestialRadius: 25362
   Population: 0

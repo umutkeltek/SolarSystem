@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351b368086be62c4aa9126b3c2e3133c, type: 3}
   m_Name: Earth
   m_EditorClassIdentifier: 
-  CelestialName: 
-  CelestialDescription: 
-  CelestialRadius: 0
-  Population: 0
+  CelestialName: Earth
+  CelestialDescription: Blue Planet
+  CelestialRadius: 6371
+  Population: 7975105156

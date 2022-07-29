@@ -722,6 +722,7 @@ GameObject:
   - component: {fileID: 658904408}
   - component: {fileID: 658904407}
   - component: {fileID: 658904410}
+  - component: {fileID: 658904411}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Celestial
@@ -896,6 +897,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactVFX: {fileID: 2432363862745014372, guid: f9bfea3784f525344b80d7e0d97be6d9, type: 3}
+--- !u!114 &658904411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658904406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab99464aa3b5f74c9e20e209b4de92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: 11aaeaef22563154d8cff14a993a3836, type: 2}
 --- !u!4 &658904412
 Transform:
   m_ObjectHideFlags: 0
@@ -1077,6 +1091,7 @@ GameObject:
   - component: {fileID: 879339743}
   - component: {fileID: 879339742}
   - component: {fileID: 879339745}
+  - component: {fileID: 879339746}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Celestial
@@ -1251,6 +1266,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactVFX: {fileID: 2432363862745014372, guid: f9bfea3784f525344b80d7e0d97be6d9, type: 3}
+--- !u!114 &879339746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879339741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab99464aa3b5f74c9e20e209b4de92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: 4c333ad5ab72233499af780bcf590cfc, type: 2}
 --- !u!4 &879339747
 Transform:
   m_ObjectHideFlags: 0
@@ -1338,6 +1366,7 @@ GameObject:
   - component: {fileID: 986116196}
   - component: {fileID: 986116201}
   - component: {fileID: 986116198}
+  - component: {fileID: 986116199}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Celestial
@@ -1387,6 +1416,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactVFX: {fileID: 2432363862745014372, guid: f9bfea3784f525344b80d7e0d97be6d9, type: 3}
+--- !u!114 &986116199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986116195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab99464aa3b5f74c9e20e209b4de92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: ae1b7e1099f75cd41af0e25acb475e3f, type: 2}
 --- !u!4 &986116200
 Transform:
   m_ObjectHideFlags: 0
@@ -1770,6 +1812,7 @@ GameObject:
   - component: {fileID: 1081213390}
   - component: {fileID: 1081213395}
   - component: {fileID: 1081213392}
+  - component: {fileID: 1081213393}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Celestial
@@ -1819,6 +1862,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactVFX: {fileID: 2432363862745014372, guid: f9bfea3784f525344b80d7e0d97be6d9, type: 3}
+--- !u!114 &1081213393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081213389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab99464aa3b5f74c9e20e209b4de92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: e4eed7ae5ce87b94ab48beb4d634e49e, type: 2}
 --- !u!4 &1081213394
 Transform:
   m_ObjectHideFlags: 0
@@ -1972,6 +2028,7 @@ GameObject:
   - component: {fileID: 1130525983}
   - component: {fileID: 1130525988}
   - component: {fileID: 1130525985}
+  - component: {fileID: 1130525986}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Celestial
@@ -2021,6 +2078,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactVFX: {fileID: 2432363862745014372, guid: f9bfea3784f525344b80d7e0d97be6d9, type: 3}
+--- !u!114 &1130525986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130525982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab99464aa3b5f74c9e20e209b4de92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: 8711881181a1a8348a1d45304e0168a8, type: 2}
 --- !u!4 &1130525987
 Transform:
   m_ObjectHideFlags: 0
@@ -2436,6 +2506,7 @@ GameObject:
   - component: {fileID: 1716071141}
   - component: {fileID: 1716071140}
   - component: {fileID: 1716071143}
+  - component: {fileID: 1716071144}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Celestial
@@ -2610,6 +2681,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactVFX: {fileID: 2432363862745014372, guid: f9bfea3784f525344b80d7e0d97be6d9, type: 3}
+--- !u!114 &1716071144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716071139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab99464aa3b5f74c9e20e209b4de92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: 4dcb8b6d939efb84c966f1618cd2fc7f, type: 2}
 --- !u!4 &1716071145
 Transform:
   m_ObjectHideFlags: 0
@@ -2638,6 +2722,7 @@ GameObject:
   - component: {fileID: 1829179056}
   - component: {fileID: 1829179061}
   - component: {fileID: 1829179058}
+  - component: {fileID: 1829179059}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Celestial
@@ -2687,6 +2772,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactVFX: {fileID: 2432363862745014372, guid: f9bfea3784f525344b80d7e0d97be6d9, type: 3}
+--- !u!114 &1829179059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829179055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab99464aa3b5f74c9e20e209b4de92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: 83be191046e204e41a87afc39d281939, type: 2}
 --- !u!4 &1829179060
 Transform:
   m_ObjectHideFlags: 0
@@ -2841,6 +2939,7 @@ GameObject:
   - component: {fileID: 1954964261}
   - component: {fileID: 1954964260}
   - component: {fileID: 1954964265}
+  - component: {fileID: 1954964266}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Celestial
@@ -2953,6 +3052,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactVFX: {fileID: 2432363862745014372, guid: f9bfea3784f525344b80d7e0d97be6d9, type: 3}
+--- !u!114 &1954964266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954964259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab99464aa3b5f74c9e20e209b4de92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: 0fd4f691c90c1cd428c3bb3fa425ab31, type: 2}
 --- !u!1 &2006955231
 GameObject:
   m_ObjectHideFlags: 0
@@ -2966,6 +3078,7 @@ GameObject:
   - component: {fileID: 2006955233}
   - component: {fileID: 2006955232}
   - component: {fileID: 2006955235}
+  - component: {fileID: 2006955236}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Celestial
@@ -3140,6 +3253,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactVFX: {fileID: 2432363862745014372, guid: f9bfea3784f525344b80d7e0d97be6d9, type: 3}
+--- !u!114 &2006955236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006955231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab99464aa3b5f74c9e20e209b4de92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableObject: {fileID: 11400000, guid: 4b36c6cc98a3a2e44816d4bb27ced4eb, type: 2}
 --- !u!4 &2006955237
 Transform:
   m_ObjectHideFlags: 0
@@ -3583,6 +3709,14 @@ PrefabInstance:
     - target: {fileID: 1754291234282265862, guid: 563db1a11a5217e449cf35e4b290bca8, type: 3}
       propertyPath: m_Name
       value: CanvasPlanetName
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754291234747432371, guid: 563db1a11a5217e449cf35e4b290bca8, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754291234747432371, guid: 563db1a11a5217e449cf35e4b290bca8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1754291235382791920, guid: 563db1a11a5217e449cf35e4b290bca8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
